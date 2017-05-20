@@ -58,6 +58,7 @@ def copyworldfile(fileout, mapped_img, threshold_img):
 	copyfile(worldfile_name, threshold_img_worldfile)
 	
 def reclass(threshold_img, relcassed_img):
+## from https://github.com/acgeospatial/Planet_API_Edge/blob/master/reclass_image.py
 	### open the raster
 	gdalData = gdal.Open(threshold_img)
 	### read into array
