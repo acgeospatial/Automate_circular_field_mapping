@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+## Script written by Andrew Cutts
+
 import subprocess ## for calling gdal functions
 import numpy as np ## for processing the images
 import cv2 ## for creating the circular fields
