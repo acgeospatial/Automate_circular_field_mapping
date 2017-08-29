@@ -74,7 +74,7 @@ def reclass(threshold_img, relcassed_img):
 	driver = gdal.GetDriverByName(format)
 	
 	# CreateCopy() method instead of Create() to save our time as the raster is the same only the extension is changing
-	outDataRaster = driver.CreateCopy(relcassed_img, gdalData, 0)
+	outDataRaster = driver.CreateCopy(reclassed_img, gdalData, 0)
 	proj = osr.SpatialReference()
 	proj.SetWellKnownGeogCS( "EPSG:32639" )
 	outDataRaster.SetProjection(proj.ExportToWkt())
