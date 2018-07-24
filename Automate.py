@@ -116,4 +116,4 @@ EPSG = "http://spatialreference.org/ref/epsg/32639/prj/"
 ## set shp projection
 projection(EPSG, outprj)
 
-print "Mapping circular fields took: ", time.time()-start_time
+print ("Mapping circular fields took: ", time.time()-start_time)
